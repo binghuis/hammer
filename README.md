@@ -4,7 +4,7 @@
 
 ## 安装
 
-`pnpm i @binghuis/hammer`
+`pnpm i toy-hammer`
 
 ## API 文档
 
