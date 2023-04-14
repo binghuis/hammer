@@ -1,8 +1,5 @@
 import { isArray, isPlainObject } from 'lodash-es';
-
-interface PlainObject {
-  [key: string]: unknown;
-}
+import { PlainObject } from './types';
 
 type NonPrimitive = PlainObject | PlainObject[];
 
