@@ -1,0 +1,32 @@
+{
+  "name": "hammer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "test": "vitest --ui",
+    "coverage": "vitest run --coverage",
+    "build": "npm run clean && tsc",
+    "prepare": "npm run build",
+    "version:patch": "npm version patch -m 'Upgrade to v%s'",
+    "version:minor": "npm version minor -m 'Upgrade to v%s'",
+    "version:major": "npm version major -m 'Upgrade to v%s'",
+    "postversion": "git push && git push --tags && npm publish"
+  },
+  "keywords": [],
+  "author": "binghuis",
+  "license": "ISC",
+  "devDependencies": {
+    "lodash-es": "^4.17.21",
+    "@types/lodash-es": "^4.17.7",
+    "@vitest/coverage-c8": "^0.30.1",
+    "@vitest/ui": "^0.30.1",
+    "rimraf": "^4.4.1",
+    "typescript": "^5.0.4",
+    "vitest": "^0.30.1"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
