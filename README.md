@@ -1,6 +1,6 @@
 # Hammer
 
-业务场景下常用工具方法库
+A TypeScript utility method library designed specifically for business scenarios.
 
 ## 安装
 
