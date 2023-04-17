@@ -4,7 +4,7 @@
   </a>
 </p>
 <br/> -->
-<p>
+<p align="center">
   <a href="https://www.npmjs.com/package/toy-hammer"><img src="https://img.shields.io/npm/v/toy-hammer" alt="npm package"></a>
   <img src="https://img.shields.io/bundlephobia/min/toy-hammer" alt="npm bundle size">
 </p>
