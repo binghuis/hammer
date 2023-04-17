@@ -1,4 +1,4 @@
-# Hammer
+# Toy-Hammer
 
 A TypeScript utility method library designed specifically for business scenarios.
 
