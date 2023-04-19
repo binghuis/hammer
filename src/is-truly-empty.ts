@@ -1,9 +1,6 @@
 import { isEmpty } from 'lodash-es';
-import { PlainArray, PlainObject } from './types';
+import { PlainObject } from './types';
 
-export const isTrulyEmpty = (value: PlainObject | String | PlainArray) => {
-  if (value === 'undefined' || value === 'null') {
-    return true;
-  }
+export const isTrulyEmpty = (value: PlainObject | string | Array<unknown>) => {
   return isEmpty(value);
 };
