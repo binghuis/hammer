@@ -11,7 +11,11 @@
     "build": "tsup",
     "release": "release-it"
   },
-  "keywords": [],
+  "keywords": [
+    "toy-hammer",
+    "tool",
+    "utility"
+  ],
   "author": "binghuis <soongbinghui@gmail.com> (https://github.com/binghuis)",
   "license": "MIT",
   "dependencies": {
