@@ -1,10 +1,10 @@
 # Toy-Hammer
 
-English · [简体中文](./README.zh-CN.md)
+[English](./README.md) · 简体中文
 
 <div align="left">
 
-`toy-hammer` is A TypeScript utility method library designed specifically for business scenarios.
+`toy-hammer` 是一个专门为业务场景设计的 TypeScript 工具方法库。
 
 [![npm version](https://img.shields.io/npm/v/toy-hammer?style=flat-square)](https://www.npmjs.com/package/toy-hammer)
 [![npm downloads](https://img.shields.io/npm/dt/toy-hammer.svg?style=flat-square)](http://www.npmtrends.com/toy-hammer)
@@ -14,9 +14,9 @@ English · [简体中文](./README.zh-CN.md)
 
 </div>
 
-## Installation
+## 安装
 
-You can use pnpm to install `toy-hammer`:
+您可以使用 pnpm 来安装：`toy-hammer`:
 
 ```
 pnpm i toy-hammer -D
@@ -26,7 +26,7 @@ pnpm i toy-hammer -D
 
 - `mappingKeys`
 
-## How to Use
+## 使用
 
 ## License
 

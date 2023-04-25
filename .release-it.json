@@ -1,8 +1,19 @@
 {
     "git": {
-        "commitMessage": "chore: release v${version}"
+        "tagName": "v${version}",
+        "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template https://raw.gitmirror.com/release-it/release-it/main/templates/changelog-compact.hbs"
     },
     "github": {
-        "release": true
-    }
+        "release": true,
+        "releaseNotes": "echo \"${changelog}\" | sed 's|TAG|v${version}|'",
+        "web": true,
+        "comments": {
+            "submit": true
+        },
+        "skipLibCheck": true
+    },
+    "hooks": {
+        "after:bump": "npx auto-changelog -p"
+    },
+    "plugins": {}
 }
