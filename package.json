@@ -1,6 +1,6 @@
 {
   "name": "toy-hammer",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A TypeScript utility method library designed specifically for business scenarios",
   "type": "module",
   "module": "lib/index.js",
