@@ -4,7 +4,7 @@ English · [简体中文](./README.zh-CN.md)
 
 <div align="left">
 
-`toy-hammer` is A TypeScript utility method library designed specifically for business scenarios.
+`toy-hammer` is a TypeScript utility method library designed specifically for business scenarios.
 
 [![npm version](https://img.shields.io/npm/v/toy-hammer?style=flat-square)](https://www.npmjs.com/package/toy-hammer)
 [![npm downloads](https://img.shields.io/npm/dt/toy-hammer.svg?style=flat-square)](http://www.npmtrends.com/toy-hammer)
@@ -25,8 +25,6 @@ pnpm i toy-hammer -D
 ## API
 
 - `mappingKeys`
-
-## How to Use
 
 ## License
 

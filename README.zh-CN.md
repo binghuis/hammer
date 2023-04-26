@@ -26,8 +26,6 @@ pnpm i toy-hammer -D
 
 - `mappingKeys`
 
-## 使用
-
 ## License
 
 MIT License.
