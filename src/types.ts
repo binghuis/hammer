@@ -1,3 +1,3 @@
 export interface PlainObject {
-	[key: string]: unknown;
+  [key: string]: unknown;
 }
