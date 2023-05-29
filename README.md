@@ -22,7 +22,7 @@ pnpm i toy-hammer -D
 
 ## API
 
-- `mappingKeys`
+[docs](https://docs.page/binghuis/toy-hammer)
 
 ## License
 

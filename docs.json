@@ -1,14 +1,16 @@
 {
-  "name": "docs.page",
+  "name": "Toy Hammer",
   "theme": "#36B9B9",
+  "favicon": "https://img.icons8.com/flat-round/64/hammer.png",
+  "logo": "https://img.icons8.com/flat-round/64/hammer.png",
   "sidebar": [
     [
-      "Home",
+      "指南",
       "/"
     ],
     [
-      "Another Page",
-      "/another-page"
+      "mapping-keys",
+      "/mapping-keys"
     ]
   ]
 }
