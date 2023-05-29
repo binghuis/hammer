@@ -1,11 +1,11 @@
 {
   "name": "Toy Hammer",
   "theme": "#36B9B9",
-  "favicon": "https://img.icons8.com/flat-round/64/hammer.png",
-  "logo": "https://img.icons8.com/flat-round/64/hammer.png",
+  "favicon": "https://raw.githubusercontent.com/binghuis/assets/main/imgs/icons8-hammer-64.png",
+  "logo": "https://raw.githubusercontent.com/binghuis/assets/main/imgs/icons8-hammer-64.png",
   "sidebar": [
     [
-      "指南",
+      "开始",
       "/"
     ],
     [
