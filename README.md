@@ -12,8 +12,6 @@
 
 ## 安装
 
-您可以使用 pnpm 来安装：`toy-hammer`:
-
 ```
 pnpm i toy-hammer -D
 ```
