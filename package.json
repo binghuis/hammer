@@ -6,7 +6,8 @@
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build:docs": "typedoc --watch",
+    "build:docs": "typedoc",
+    "dev:docs": "typedoc --watch",
     "test": "vitest --ui",
     "coverage": "vitest run --coverage",
     "build": "tsup",
