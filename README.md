@@ -18,7 +18,6 @@ pnpm i toy-hammer -D
 
 ## API
 
-[文档](https://docs.page/binghuis/toy-hammer)
 
 ## License
 

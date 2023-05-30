@@ -6,12 +6,12 @@
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
+    "build:docs": "typedoc --watch",
     "test": "vitest --ui",
     "coverage": "vitest run --coverage",
     "build": "tsup",
     "release": "release-it"
   },
-  "homepage": "https://docs.page/binghuis/toy-hammer",
   "keywords": [
     "toy-hammer",
     "tool",
@@ -32,6 +32,7 @@
     "rome": "^12.1.2",
     "terser": "^5.17.6",
     "tsup": "^6.7.0",
+    "typedoc": "^0.24.7",
     "typescript": "^5.0.4",
     "vitest": "^0.31.1"
   },

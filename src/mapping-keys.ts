@@ -1,11 +1,7 @@
-import { PlainObject } from './types';
+import { Mapper, NonPrimitive, PlainObject } from './types';
 import { isArray, isPlainObject } from 'lodash-es';
 
-type NonPrimitive = PlainObject | PlainObject[];
-
 const isNonPrimitive = (val: unknown) => !!(isArray(val) || isPlainObject(val));
-
-export type Mapper = (key: string, value: unknown) => string;
 
 export const mappingKeys = (
   data: NonPrimitive,

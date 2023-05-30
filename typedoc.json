@@ -1,0 +1,12 @@
+{
+    "$schema": "https://typedoc.org/schema.json",
+    "entryPoints": [
+        "src/index.ts",
+        "src/types.ts"
+    ],
+    "compilerOptions": {
+        "outFile": "docs"
+    },
+    "name": "Toy Hammer",
+    "pretty": true
+}
