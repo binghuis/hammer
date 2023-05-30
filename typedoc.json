@@ -4,9 +4,11 @@
         "src/index.ts",
         "src/types.ts"
     ],
-    "compilerOptions": {
-        "outFile": "docs"
-    },
+    "compilerOptions": {},
     "name": "Toy Hammer",
-    "pretty": true
+    "pretty": true,
+    "plugin": [
+        "typedoc-plugin-extras"
+    ],
+    "favicon": "https://raw.githubusercontent.com/binghuis/assets/main/imgs/icons8-hammer-64.png"
 }

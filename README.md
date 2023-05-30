@@ -16,7 +16,9 @@
 pnpm i toy-hammer -D
 ```
 
-## API
+## API 
+
+[文档](https://toy-hammer.vercel.app/)
 
 
 ## License

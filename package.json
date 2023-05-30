@@ -18,6 +18,7 @@
     "tool",
     "utility"
   ],
+  "homepage": "https://toy-hammer.vercel.app",
   "author": "binghuis <soongbinghui@gmail.com> (https://github.com/binghuis)",
   "license": "MIT",
   "dependencies": {
@@ -34,6 +35,7 @@
     "terser": "^5.17.6",
     "tsup": "^6.7.0",
     "typedoc": "^0.24.7",
+    "typedoc-plugin-extras": "^2.3.3",
     "typescript": "^5.0.4",
     "vitest": "^0.31.1"
   },
