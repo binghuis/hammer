@@ -1,6 +1,6 @@
-export interface PlainObject {
+export type PlainObject = {
   [key: string]: unknown;
-}
+};
 
 export type NonPrimitive = PlainObject | PlainObject[];
 
