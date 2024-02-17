@@ -8,7 +8,8 @@
 	"scripts": {
 		"build:docs": "typedoc",
 		"dev:docs": "typedoc --watch",
-		"test": "vitest --ui",
+		"test:ui": "vitest --ui",
+		"test": "vitest",
 		"coverage": "vitest run --coverage",
 		"build": "tsup",
 		"release": "release-it"
