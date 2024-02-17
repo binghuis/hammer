@@ -1,5 +1,3 @@
-# Toy-Hammer
-
 <div align="left">
 
 `toy-hammer` 是一个为业务开发设计的 TypeScript 方法库。
@@ -15,7 +13,3 @@
 ```
 pnpm i toy-hammer -D
 ```
-
-## 文档
-
-https://toy-hammer.vercel.app/
