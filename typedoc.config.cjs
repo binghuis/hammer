@@ -11,6 +11,14 @@ module.exports = {
 	categorizeByGroup: false,
 	searchCategoryBoosts: {},
 	searchGroupBoosts: {},
+	"visibilityFilters": {
+        "protected": false,
+        "private": false,
+        "inherited": true,
+        "external": false,
+        "@alpha": false,
+        "@beta": false
+    },
 	navigationLinks: {
 		"🐈‍⬛": "https://github.com/binghuis/toy-hammer",
 	},
