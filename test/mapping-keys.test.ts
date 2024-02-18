@@ -1,33 +1,35 @@
-import { mappingKeys } from "../src/mapping-keys";
-import { beforeEach, describe, expect, expectTypeOf, it, vi } from "vitest";
-import { Mapper } from "../src/types";
+import { beforeEach, describe, expect, expectTypeOf, it, vi } from 'vitest';
+import { mappingKeys } from '../src/mapping-keys';
+import { Mapper } from '../src/types';
 
-describe("mappingKeys(data, mapper)", () => {
+describe('mappingKeys(data, mapper)', () => {
   let mapper: Mapper;
 
   beforeEach(() => {
     mapper = vi.fn((key: string) => key.toUpperCase());
   });
 
-  it("exports a function", () => {
+  it('exports a function', () => {
     expectTypeOf(mappingKeys).toBeFunction();
   });
 
-  describe("@object: any", () => {
-    it("transforms keys of simple object", () => {
+  describe('@object: any', () => {
+    it('transforms keys of simple object', () => {
       expect(mappingKeys({ one: 1, two: 2 }, mapper)).toEqual({
         ONE: 1,
         TWO: 2,
       });
     });
 
-    it("transforms keys of object with nested objects/arrays", () => {
-      expect(
-        mappingKeys({ one: 1, obj: { two: 2, three: 3 }, arr: [4, 5] }, mapper)
-      ).toEqual({ ONE: 1, OBJ: { TWO: 2, THREE: 3 }, ARR: [4, 5] });
+    it('transforms keys of object with nested objects/arrays', () => {
+      expect(mappingKeys({ one: 1, obj: { two: 2, three: 3 }, arr: [4, 5] }, mapper)).toEqual({
+        ONE: 1,
+        OBJ: { TWO: 2, THREE: 3 },
+        ARR: [4, 5],
+      });
     });
 
-    it("transforms an object with circular references", () => {
+    it('transforms an object with circular references', () => {
       const obj = {
         one: 1,
         arr: [2, 3],
@@ -49,20 +51,20 @@ describe("mappingKeys(data, mapper)", () => {
     });
   });
 
-  describe("@mapper(key: string, value: unknown): string", () => {
-    it("throws Error if undefined", () => {
+  describe('@mapper(key: string, value: unknown): string', () => {
+    it('throws Error if undefined', () => {
       expect(() => mappingKeys({ one: 1 }, undefined as any)).toThrowError();
     });
 
-    it("is called once per object property", () => {
+    it('is called once per object property', () => {
       mappingKeys({ one: 1, obj: { two: 2, three: 3 }, arr: [4, 5] }, mapper);
       expect(mapper).toBeCalledTimes(5);
     });
 
-    it("is called with arguments", () => {
+    it('is called with arguments', () => {
       mappingKeys({ one: 1, arr: [2, 3] }, mapper);
-      expect(mapper).toHaveBeenCalledWith("one", 1);
-      expect(mapper).toHaveBeenCalledWith("arr", [2, 3]);
+      expect(mapper).toHaveBeenCalledWith('one', 1);
+      expect(mapper).toHaveBeenCalledWith('arr', [2, 3]);
     });
   });
 });

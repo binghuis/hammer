@@ -1,12 +1,9 @@
-import { Mapper, NonPrimitive, PlainObject } from './types';
 import { isArray, isPlainObject } from 'lodash-es';
+import { Mapper, NonPrimitive, PlainObject } from './types';
 
 const isNonPrimitive = (val: unknown) => !!(isArray(val) || isPlainObject(val));
 
-export const mappingKeys = (
-  data: NonPrimitive,
-  mapper: Mapper,
-): NonPrimitive => {
+export const mappingKeys = (data: NonPrimitive, mapper: Mapper): NonPrimitive => {
   if (!isNonPrimitive(data)) {
     return data;
   }

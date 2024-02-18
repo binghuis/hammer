@@ -1,3 +1,7 @@
+/**
+ * @module 类型
+ */
+
 export type PlainObject = {
   [key: string]: unknown;
 };
