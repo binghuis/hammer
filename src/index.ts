@@ -1,5 +1,5 @@
 /**
- * @module 方法
+ * @module 函数
  */
 
 export { delay } from './delay';
